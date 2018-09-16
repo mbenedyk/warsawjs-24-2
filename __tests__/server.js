@@ -1,5 +1,18 @@
-import {Server} from "../server";
+import Server from "../server";
 
-test('test', () => {
-    expect(typeof Server).toBe('function');
+test('Server defined', () => {
+    expect(typeof Server).toBe('object');
+});
+
+
+test('fetchProducts', async () => {
+    var products = await Server.fetchProducts();
+
+    expect(products).not.toBeNull();
+});
+
+test('fetchProducts is promise', () => {
+    var potentialPromise = Server.fetchProducts();
+
+    expect(typeof(potentialPromise['then'])).toBe('function');
 });
