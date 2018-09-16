@@ -1,0 +1,1 @@
+[![Build Status](https://semaphoreci.com/api/v1/mbenedyk/warsawjs-24-2/branches/master/shields_badge.svg)](https://semaphoreci.com/mbenedyk/warsawjs-24-2)
