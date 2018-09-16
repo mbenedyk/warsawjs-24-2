@@ -28,7 +28,8 @@
   "scripts": {
     "test": "jest",
     "run:watch": "json-server --watch db.json",
-    "run": "json-server db.json"
+    "run": "json-server db.json",
+    "start:front-end": "webpack -w front-end/main.js -o front-end/dist/bundle.js --mode development"
   },
   "keywords": [],
   "author": "",
